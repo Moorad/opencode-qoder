@@ -8,15 +8,15 @@
     "opencode-plugin",
     "qoder"
   ],
+  "homepage": "https://github.com/Moorad/opencode-qoder#readme",
+  "bugs": {
+    "url": "https://github.com/Moorad/opencode-qoder/issues"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Moorad/qoder-opencode-plugin.git"
+    "url": "git+https://github.com/Moorad/opencode-qoder.git"
   },
-  "bugs": {
-    "url": "https://github.com/Moorad/qoder-opencode-plugin/issues"
-  },
-  "homepage": "https://github.com/Moorad/qoder-opencode-plugin#readme",
   "files": [
     "dist",
     "README.md"

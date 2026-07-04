@@ -1,0 +1,49 @@
+{
+  "name": "opencode-qoder",
+  "version": "0.1.0",
+  "description": "Qoder provider plugin for opencode",
+  "keywords": [
+    "ai-sdk-provider",
+    "opencode",
+    "opencode-plugin",
+    "qoder"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moorad/qoder-opencode-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Moorad/qoder-opencode-plugin/issues"
+  },
+  "homepage": "https://github.com/Moorad/qoder-opencode-plugin#readme",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rm -rf ./dist && tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run src"
+  },
+  "devDependencies": {
+    "@ai-sdk/provider": "3.0.8",
+    "@opencode-ai/plugin": "1.17.13",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.2",
+    "vitest": "^4.1.9"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.17.0"
+  },
+  "packageManager": "pnpm@11.9.0+sha512.bd682d5d03fe525ef7c9fd6780c6884d1e756ac4c9c9fe00c538782824310dcf90e3ddc4f53835f06dfaebd5085e41855e0bcbb3b60de2ac5bbab89e5036f03b"
+}

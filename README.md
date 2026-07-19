@@ -23,7 +23,7 @@ Add the built plugin to `opencode.json` in this repo, or adjust the relative pat
 }
 ```
 
-The plugin registers provider `qoder` and these models: `auto`, `ultimate`, `performance`, `efficient`, `lite`, `qmodel`, `qmodel_latest`, `dmodel`, `dfmodel`, `gm51model`, `kmodel`, and `mmodel`.
+The plugin registers provider `qoder` and these models: `auto`, `ultimate`, `performance`, `efficient`, `lite`, `qmodel_preview`, `qmodel`, `qmodel_latest`, `dmodel`, `dfmodel`, `gm51model`, `kmodel_latest`, `kmodel`, and `mmodel`.
 
 ## Authenticate
 

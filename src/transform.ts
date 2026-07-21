@@ -117,8 +117,8 @@ function transformAssistantMessage(message: Extract<LanguageModelV3Message, { ro
       });
     }
   }
-
-  const result: QoderMessage = { role: "assistant", content: content || null };
+  const hasText = content.trim().length > 0;
+  const result: QoderMessage = { role: "assistant", content: hasText ? content : toolCalls.length > 0 ? "." : null, };
   if (toolCalls.length > 0) result.tool_calls = toolCalls;
   return result;
 }
